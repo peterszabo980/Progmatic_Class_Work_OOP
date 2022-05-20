@@ -15,7 +15,7 @@ public class Lesson_20220411_02 {
         // (takarékoskodás a processzor idejével)
         moonTravel.from = "Föld";
         moonTravel.to = "Hold";
-        moonTravel.time = 100;
+        moonTravel  .time = 100;
         moonTravel.price = 1000;
 
         Travel marsTravel = new Travel();
@@ -33,9 +33,9 @@ public class Lesson_20220411_02 {
         // false - két, külön objektum egyformák, de nem azonosak
         System.out.println(marsTravel == marsTravel2);
         // false - két, külön objektum egyformák, de nem azonosak
-        //alapértelmezetten az equals az ==-t követi
-        //Stringeknél felül van írva (ott úgy működik, ahogyan elvárjuk)
-        //lehetőség van megváltoztatni (lsd. később)
+        // alapértelmezetten az equals az ==-t követi
+        // Stringeknél felül van írva (ott úgy működik, ahogyan elvárjuk)
+        // lehetőség van megváltoztatni (lsd. később)
         System.out.println(marsTravel.equals(marsTravel2));
         Travel favouriteTravel = marsTravel;
         // 100%-os felár kifizetése első osztályra
@@ -47,9 +47,9 @@ public class Lesson_20220411_02 {
 
         Travel nextTravel = null;
         // ha null referencia valamelyik mezőjére hivatkozunk,
-        //a akkor NullPointerException
+        //az akkor NullPointerException
 
-        //nullal mindig == vagy !=
+        //null-al mindig == vagy !=
         // illetve nem null-ra xyz.equals(null) hamisat ad
         if (nextTravel != null) {
 

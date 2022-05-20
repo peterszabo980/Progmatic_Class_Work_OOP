@@ -1,0 +1,28 @@
+sqrt((b1.x - b2.x) ^ 2 + (b1.y - b2.y) ^ 2 + (b1.z - b2.z) ^ 2)
+
+1. Planet osztály létrehozása
+String name
+int x, y, z
+
+getterek / setterek
+default konstruktor
+csak nevet beállító konstruktor
+minden mezőt beállító konstruktor
+
+2. Travel osztály
+Planet source
+Planet destination
+double time (órában)
+int price
+double distance (ez mező legyen vagy számított érték?)
+(Két bolygó pozíciójából következik.)
+
+String infoSheet()
+X bolygó -> Y bolygó
+idő      : 2.5 óra
+ár       : 2000
+távolság : 246433.5 km
+
+App (main metódus)
+Hozzuk létre 3 bolygót
+3 utazást a bolygók között

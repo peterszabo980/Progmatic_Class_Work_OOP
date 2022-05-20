@@ -16,6 +16,13 @@ public class Lesson_20220411_05 {
                 new SpaceShip("H67", "teher", false, 21000)
         };
 
+        // vagy így is lehet
+        /*
+        SpaceShip ship1 = new SpaceShip("G23", "teher", false, 1000);
+        SpaceShip ship2 = new SpaceShip("X55", "teher", true, 3500);
+        SpaceShip ship3 = new SpaceShip("H67", "teher", false, 21000);
+        */
+
         // default konstruktor (ő végzi az objektum példányosítását) = bemeneteli paraméter nélküli ("üres") konstruktor
         // default konstruktor hívása
         SpaceShip ship4 = new SpaceShip();

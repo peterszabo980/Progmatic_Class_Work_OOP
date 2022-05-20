@@ -1,6 +1,6 @@
 package hu.progmatic.OOP_20220411;
 
-public class Lesson_20220411_03 {
+public class  Lesson_20220411_03 {
     public static void main(String[] args) {
         Travel moonTravel = new Travel();
         moonTravel.from = "Föld";
@@ -15,6 +15,7 @@ public class Lesson_20220411_03 {
 
     }
     public static void travelData(Travel travel){
+        System.out.println("==============================");
         System.out.println("Indulás: " + travel.from);
         System.out.println("Cél: " + travel.to);
         System.out.println("Hossz: " + travel.time);

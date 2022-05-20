@@ -6,6 +6,10 @@ public class Travel {
     public int time;
     public int price;
 
+
+    // A másik konstruktor miatt deaktiválódik a nyelv által generált default konstruktor.
+    // Ha szeretnénk, hogy továbbra is létre lehessen hozni "üres" utazásokat,
+    // akkor kézzel újra létre kell hozni a default konstruktort.
     public Travel() {
 
     }

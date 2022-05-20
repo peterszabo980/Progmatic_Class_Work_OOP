@@ -11,7 +11,9 @@ public class Lesson_20220411_04 {
         Travel cheapest = null;
 
         // rövidzáras kiértékelés (short-circuit)
-        for (Travel travel: travels) {
+        for (Travel travel: travels) { // nem nézi meg a cheapest.price, ha null (tehát, ha nincs abban a
+                                        // sorban érték, mert ha nézné, akkor hibára futna a program, hisz
+                                        // nincs benne érték, ha null
             if (cheapest == null || travel.price < cheapest.price) {
                 cheapest = travel;
             }
@@ -30,6 +32,7 @@ public class Lesson_20220411_04 {
 
 }
     public static void travelData(Travel travel){
+        System.out.println("=======================");
         System.out.println("Indulás: " + travel.from);
         System.out.println("Cél: " + travel.to);
         System.out.println("Hossz: " + travel.time);
