@@ -1,0 +1,30 @@
+Country
+final String ancestor;
+String currentName;
+equals (ancestor)
+
+
+Sovereign
+final String birthName
+String name
+equals (birthName)
+
+
+Interval
+static int currentYear
+int yearFrom, Integer yearTo
+int length (ha yearTo null, akkor currentYear)
+
+Reign
+Country country;
+Sovereign sovereign;
+boolean isSuccessorOf(Reign) (country equals && yearFrom == yearEnd)
+
+
+War
+String name;
+String country1, country2;
+boolean isCivilWar (country1.equals(country2))
+
+Intervallumok hossza (összegzés, heterogén kollekció)
+toStringek kiírása

@@ -1,0 +1,25 @@
+Fluid
+name
+density
+
+Container
+volume -> 0
+weight -> volume * density
+fluid
+
+SphereContainer
+volume -> 4/3 * pi * r^3
+
+CuboidContainer
+volume -> a * b * c
+
+PrismContainer
+volume -> area * heights
+
+RectContainer
+area -> a * b
+
+CylinderContainer
+area -> pi * r^2
+
+összes tömeget

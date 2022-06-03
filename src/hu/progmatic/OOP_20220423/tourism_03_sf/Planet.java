@@ -1,24 +1,28 @@
-package hu.progmatic.OOP_20220421.Travel.tourism_02_wrapper;
+package hu.progmatic.OOP_20220423.tourism_03_sf;
 
         public class Planet {
+            private final String id;
             private String name;
             private int x, y, z;
 
-        public Planet() {
+        public Planet(String id) {
+            this.id = id;
         }
 
-        public Planet(String name) {
+        public Planet(String id,  String name) {
+            this.id = id;
             this.name = name;
         }
 
-        public Planet(String name, int x, int y, int z) {
+        public Planet(String id, String name, int x, int y, int z) {
+            this.id = id;
             this.name = name;
             this.x = x;
             this.y = y;
             this.z = z;
         }
 
-            public String getName() {
+           public String getName() {
                 return name;
             }
 

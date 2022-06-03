@@ -1,4 +1,4 @@
-package hu.progmatic.OOP_20220423;
+package hu.progmatic.OOP_20220423.tourism_03_sf;
 
 public class Travel {
     public static final int Founded = 2210; // lehet publiccal létrehozni, mert soha nem fog változni, ez egy adottság

@@ -1,0 +1,40 @@
+Person
+final String id
+String name
+int age
+
+toString
+
+POPULATION (konstans)
+globális változó (aktuális év)
+
+00001 / 20000000 (2250) Kovács József 35
+
+
+BronzeClubcard
+Person owner
+String expiration
+int admissions
+int totalPrice -> admissions * 1000
+
+toString
+
+SilverClubcard
+Person owner
+String expiration
+int admissions
+int totalPrice -> 5000 + admissions * 500
+
+toString
+
+GoldClubcard
+Person owner
+String expiration
+int admissions
+int totalPrice -> 25000
+
+toString
+
+App / Main
+Hozzunk létre 3 ember + 3 klubtagságit,
+írjuk ki az adatlapokat

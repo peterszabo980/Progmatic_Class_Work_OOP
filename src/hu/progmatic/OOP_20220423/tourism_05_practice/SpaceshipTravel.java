@@ -1,19 +1,18 @@
-package hu.progmatic.OOP_20220421.Travel.tourism_02_wrapper;
+package hu.progmatic.OOP_20220423.tourism_05_practice;
 
-public class Travel {
-    private Planet source; // nem ténylegesen tartalmazza az adott bolygót, hanem hivatkozik rá
-    private Planet destination; // ez is hivatkozás
-    private double time;
+public class SpaceshipTravel {
+    public static final double SPEED = 10_000_000.0;
+
+    private Planet source;
+    private Planet destination;
     private Integer price;
 
-    public Travel() {
-
+    public SpaceshipTravel() {
     }
 
-    public Travel(Planet source, Planet destination, double time, Integer price) {
+    public SpaceshipTravel(Planet source, Planet destination, Integer price) {
         this.source = source;
         this.destination = destination;
-        this.time = time;
         this.price = price;
     }
 
@@ -34,11 +33,11 @@ public class Travel {
     }
 
     public double getTime() {
-        return time;
+        return getDistance() / SPEED;
     }
 
-    public void setTime(double time) {
-        this.time = time;
+    public double getReturnTime() {
+        return getTime() * 2.0;
     }
 
     public Integer getPrice() {
@@ -57,10 +56,17 @@ public class Travel {
         return Math.sqrt(dx * dx + dy * dy + dz * dz);
     }
 
-    public String getInfoSheet() {
-        return source.getName() + " \t->\t" + destination.getName() + "\n"
-                + "idő:\t\t" + time + " óra\n"
-                + "ár:\t\t\t" + price + " GFt\n"
+    @Override
+    public String toString() {
+        String priceInfo = price != null
+                ? "ár:\t\t\t" + price + " GFt"
+                : "JELENLEG NEM FOGLALHATÓ";
+
+        return "==============================\n"
+                + source.getName() + " -> " + destination.getName() + "\n"
+                + "idő:\t\t" + getTime() + " óra\n"
+                + priceInfo + "\n"
                 + "távolság:\t" + getDistance() + " km";
     }
+
 }

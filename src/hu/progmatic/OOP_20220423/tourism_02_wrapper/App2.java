@@ -1,4 +1,4 @@
-package hu.progmatic.OOP_20220421.Travel.tourism_02_wrapper;
+package hu.progmatic.OOP_20220423.tourism_02_wrapper;
 
 // tömbök nélkuli metódus
 public class App2 {
