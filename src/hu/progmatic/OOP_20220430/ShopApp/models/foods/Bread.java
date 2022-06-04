@@ -1,0 +1,33 @@
+package hu.progmatic.OOP_20220430.ShopApp.models.foods;
+
+import hu.progmatic.OOP_20220430.ShopApp.models.UnitType;
+
+// gyerekosztály / származtatott osztály
+public class Bread extends Food {
+
+    private String flourType;
+
+    public Bread() {
+        super(1.0, UnitType.KILOGRAM, false, 10);
+        this.flourType = "white wheat";
+    }
+
+    public Bread(double quantity, int price) {
+        super(quantity, UnitType.KILOGRAM, price);
+        this.flourType = "white wheat";
+    }
+
+    public Bread(double quantity, UnitType unitType, boolean isLongLife, int price, String flourType) {
+        super(quantity, unitType, isLongLife, price);
+        this.flourType = flourType;
+    }
+
+    public String getFlourType() {
+        return flourType;
+    }
+
+    public void setFlourType(String flourType) {
+        this.flourType = flourType;
+    }
+
+}
